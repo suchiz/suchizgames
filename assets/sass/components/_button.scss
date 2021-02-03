@@ -17,7 +17,7 @@
 			'color #{_duration(transition)} ease-in-out'
 		));
 		border-radius: _size(border-radius);
-		border: 0;
+		border: none;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight);

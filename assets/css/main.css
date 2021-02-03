@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -28,6 +22,9 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+	
+
 
 body {
 	line-height: 1;
@@ -100,10 +97,10 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #5293b1 15%, #341c6d 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #5293b1 15%, #341c6d  85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #5293b1 15%, #341c6d  85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #5293b1 15%, #341c6d  85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -193,10 +190,16 @@ input, select, textarea {
 			text-align: justify;
 		}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2 , h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
+		letter-spacing: -0.025em;
+	}
+	h3 {
+		font-weight: 300;
+		line-height: 1.5;
+		margin: 0 0 0em 0;
 		letter-spacing: -0.025em;
 	}
 
@@ -1825,6 +1828,19 @@ input, select, textarea {
 	}
 
 /* Button */
+.button-noborder {
+    outline: none;
+    border: none;
+    padding: none;
+    background: none;
+}
+
+.button-noborder :hover {
+    outline: 1em;
+    border: 1px;
+    padding: none;
+    background: none;
+}
 
 	input[type="submit"],
 	input[type="reset"],
@@ -1833,14 +1849,15 @@ input, select, textarea {
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
+		/* -webkit-backface-visibility: hidden; */
 		-ms-appearance: none;
 		appearance: none;
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-radius: 8px;
-		border: 0;
+		border-radius: 15px;
+		border: none;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
@@ -2291,7 +2308,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #efa8b0;
+			color: #230024;
 		}
 
 		.icon.style2 {
@@ -2307,7 +2324,7 @@ input, select, textarea {
 		}
 
 		.icon.style5 {
-			color: #8cc9f0;
+			color: #a3bdf1;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -2999,16 +3016,17 @@ input, select, textarea {
 
 		.spotlight .image {
 			display: inline-block;
-			margin-left: 4em;
-			padding: 0.65em;
+			margin: 2em;
+			/* margin-right: 5em; */
+			/* padding: 0.65em; */
 			border-radius: 100%;
-			border: solid 1px;
+			border: solid 1.5px;
 		}
 
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				width: 9.5em;
 			}
 
 		@media screen and (max-width: 980px) {

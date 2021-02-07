@@ -1828,6 +1828,7 @@ input, select, textarea {
 	}
 
 /* Button */
+
 .button-noborder {
     outline: none;
     border: none;
@@ -1836,8 +1837,8 @@ input, select, textarea {
 }
 
 .button-noborder :hover {
-    outline: 1em;
-    border: 1px;
+    outline: 5;
+    border: 5;
     padding: none;
     background: none;
 }
@@ -1849,7 +1850,6 @@ input, select, textarea {
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
-		/* -webkit-backface-visibility: hidden; */
 		-ms-appearance: none;
 		appearance: none;
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;

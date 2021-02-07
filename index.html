@@ -19,6 +19,7 @@
 
 <body class="is-preload">
 
+
 	<!-- Wrapper -->
 	<div id="wrapper">
 
@@ -34,7 +35,7 @@
 			<ul>
 				<li><a href="#intro" class="active">RESUME</a></li>
 				<li><a href="#">SUCHIZ GAMES</a></li>
-				<li><a href="#">MUSIC</a></li>
+				<li><a href="#">HOBBIES</a></li>
 				<!-- <li><a href="#cta">Blog</a></li> -->
 			</ul>
 		</nav>
@@ -61,11 +62,12 @@
 							were remote controlled with an android application using a server/client model. Yolact++ was
 							working
 							in livestream.</p>
+
+							<p id="introductionDiv" hidden> This is more on me... </p>
 							<footer class="major">
 								<ul class="actions">
-									<li><a href="generic.html" class="button-noborder"><img src="images/dropdown_button_small.png" /></a></li>
-									  
-									<!-- <li><a href="generic.html" class="button"></a> <img src="images/dropdown_button.png" alt="" /></li> -->
+									<li><a  onclick="show_hide_introduction()" class="button-noborder" ><img id="imgIntro" src="images/dropdown_button_small.png" /></a></li>
+									<!-- <button class="button-noborder" onclick="show_hide_introduction()" ><img src="images/dropdown_button_small.png" /> </button> -->
 								</ul>
 							</footer>
 
@@ -113,7 +115,7 @@
 					porta. Cras eu ornare dui curabitur lacinia.</p> -->
 				<footer class="major">
 					<ul class="actions special">
-						<li><a href="generic.html" class="button-noborder"><img src="images/dropdown_button.png" /></a></li>
+						<li><a onclick="show_hide_project()" class="button-noborder"><img id="imgProject" src="images/dropdown_button.png" /></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -128,17 +130,17 @@
 						<h3><strong>BSc Computer Sciences</strong>
 							<h4> <i>Paul Sabatier University</i></h4>
 						</h3>
+						<p id="bscupsDiv" hidden>Shell programming<br>
+							Bioinformatics<br>
+							Basic signal processing (MATLAB)<br>
+							Introduction to AI (Ocaml) <br>
+							Introduction to Infographics and image processing<br>
+							Functional programming <br>
+							Oriented Object Programming <br>
+							Data structure <br>
+							Software engineering (V Cycle, tests)<br></p>
+						<a onclick="show_hide_bscups()" class="button-noborder"><img id="imgBscups" src="images/dropdown_button_small.png" /></a>
 
-						<a href="generic.html" class="button-noborder"><img src="images/dropdown_button_small.png" /></a>
-						<!-- <p>Shell programming<br>
-											Bioinformatics<br>
-											Basic signal processing (MATLAB)<br>
-											Introduction to AI (Ocaml) <br>
-											Introduction to Infographics and image processing<br>
-											Functional programming <br>
-											Oriented Object Programming <br>
-											Data structure <br>
-											Software engineering (V Cycle, tests)</p> -->
 					</li>
 
 					<li class="actions special">
@@ -146,35 +148,35 @@
 						<h3><strong>MSc 1 Computer Sciences</strong>
 							<h4> <i>Pázmány Péter Catholic University</i></h4>
 						</h3>
+						<p id="mscppkeDiv" hidden>Data Mining and Machine learning (Weka)<br>
+							Basics of Image processing (MATLAB)<br>
+							Biometrics for identification (MATLAB)<br>
+							Introduction to AI (JavaScript)<br>
+							Biomedical Signal Processing (MATLAB)<br>
+							Advanced Java (JavaEE)<br>
+							Android programming (Java/Kotlin)<br>
+							Parallel programming (C++)<br></p>
+						<a onclick="show_hide_mscppke()" class="button-noborder"><img id="imgMscppke" src="images/dropdown_button_small.png" /></a>
+						
 
-						<a href="generic.html" class="button-noborder"><img src="images/dropdown_button_small.png" /></a>
-						<!-- 
-										<p>Data Mining and Machine learning (Weka)<br>
-											Basics of Image processing (MATLAB)<br>
-											Biometrics for identification (MATLAB)<br>
-											Introduction to AI (JavaScript)<br>
-											Biomedical Signal Processing (MATLAB)<br>
-											Advanced Java (JavaEE)<br>
-											Android programming (Java/Kotlin)<br>
-											Parallel programming (C++)</p> -->
 					</li>
 					<li>
 						<span class="image"><img src="images/logo_ups.png" alt="" /></span>
 						<h3><strong>MSc 2 Image Analysis</strong>
 							<h4> <i>Paul Sabatier University</i></h4>
 						</h3>
+				
+						<p id="mscupsDiv" hidden>Real time rendering (C++)<br>
+							Image processing (MATLAB)<br>
+							Signal processing (MATLAB)<br>
+							Animation (C++)<br>
+							Medical image processing<br>
+							Satellite image processing (Orfeo ToolBox)<br>
+							Computer vision (MATLAB)<br>
+							Agile and DevOps initiation (Jenkins, SonarQube)<br></p>
+						<a onclick="show_hide_mscups()" class="button-noborder"><img id="imgMscups" src="images/dropdown_button_small.png" /></a>
 
-						<a href="generic.html" class="button-noborder"><img src="images/dropdown_button_small.png" /></a>
-
-						<!-- 
-										<p>Real time rendering (C++)<br>
-											Image processing (MATLAB)<br>
-											Signal processing (MATLAB)<br>
-											Animation (C++)<br>
-											Medical image processing<br>
-											Satellite image processing (Orfeo ToolBox)<br>
-											Computer vision (MATLAB)<br>
-											Agile and DevOps initiation (Jenkins, SonarQube)</p> -->
+		
 					</li>
 				</ul>
 			</section>
@@ -182,7 +184,7 @@
 
 
 			<!-- Get Started -->
-			<section id="cta" class="main special">
+			<!-- <section id="cta" class="main special">
 				<header class="major">
 					<h2>Congue imperdiet</h2>
 					<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
@@ -194,7 +196,7 @@
 						<li><a href="generic.html" class="button">Learn More</a></li>
 					</ul>
 				</footer>
-			</section>
+			</section> -->
 
 		</div>
 
@@ -234,6 +236,7 @@
 	</div>
 
 	<!-- Scripts -->
+	<script src="assets/js/suchizfunctions.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>

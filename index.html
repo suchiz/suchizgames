@@ -29,7 +29,7 @@
 		<header id="header">
 			<!-- <span class="logo"><img src="images/avatar.jpg" alt="" /></span> -->
 			<h1>Julien Hongsavanh</h1>
-			<p><strong>... Website under construction ...</strong>  <br>Image Processing and Computer Vision engineer</p>
+			<p><strong>... Website under construction ...</strong> <br>Image Processing and Computer Vision engineer</p>
 		</header>
 
 		<!-- Nav -->
@@ -46,16 +46,15 @@
 		<div id="main">
 
 			<!-- Introduction -->
-			<section id="intro" class="main" >
+			<section id="intro" class="main">
 				<div class="spotlight">
-					<ul>
-						<span class="image"><img src="images/avatar.jpg" alt="" /></span>
-					</ul>
+					<span class="image" id="introImgToHide"><img src="images/avatar.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
 							<h2>Introduction</h2>
 						</header>
-						<p>I am Julien Hongsavanh. I am 26 years old. I am graduated from a MSc Computer Graphics and Image
+						<p id="introTextToHide">I am Julien Hongsavanh. I am 26 years old. I am graduated from a MSc Computer Graphics and
+							Image
 							Analysis.
 							I worked one year for Safran Engineering Services. I was in charge of recognition, detection
 							and
@@ -65,18 +64,50 @@
 							working
 							in livestream.</p>
 
-							<p id="introductionDiv" hidden> This is more on me... </p>
-							<footer class="major">
-								<ul class="actions">
-									<li><a  onclick="show_hide_introduction()" class="button-noborder" ><img id="imgIntro" src="images/dropdown_button_small.png" /></a></li>
-									<!-- <button class="button-noborder" onclick="show_hide_introduction()" ><img src="images/dropdown_button_small.png" /> </button> -->
-								</ul>
-							</footer>
+						<p id="introductionDiv" hidden>
+							I have been passionate about computers since I was a child. It started with video games,
+							then at the age of 13, I programmed my first game in C.
+							At that age, I was already convinced that I would work in computer science later on. Then,
+							it's only in my second year of bachelor's degree that I am fascinated by digital imaging.
+
+							Indeed, digital imaging is the field in which I would like to work because it is omnipresent
+							in everyday life and its needs are increasing while being different from day to day. It is
+							this fascinating and challenging diversity that makes this field the most attractive to me.
+							For instance for image processing, there is Big Data and IoT which require the refinement of
+							images perceived by capture devices such as surveillance cameras or satellites. And for
+							computer graphics, there is more and more realistic games, or realistic animations.
+							Consequently, I chose options such as "Introduction to Computer Graphics and Image
+							Processing" as early as my degree in order to specialise in the field.
+							To pursue this goal, I decided to do my first internship in Montreal in digital imaging to
+							confirm my professional project.
+							In this internship oriented towards computer graphics, I first had to implement a
+							translation function to an existing tool on an open source image editing software in C++
+							language.
+							I also made an exchange year at Pazmany Peter Catholic University in Budapest, an university
+							member of the European Image processing and Computer Vision Master degree.
+							And finally, I finished with my Master of Science in Computer Graphics and Image
+							Analysis.
+
+							Today, my passion for computers and my taste for innovation and challenge is reflected in numerous participations in
+							Hackathons on various subjects, such as video game development, software development or
+							artificial intelligence. This also translates into the development of a video game for
+							Android in my spare time. Check out the Suchiz Games tab for more informations on these !
+						</p>
+						<footer class="major">
+							<ul class="actions">
+								<li><a onclick="show_hide_introduction()" class="button-noborder"><img id="imgIntro"
+											src="images/dropdown_button_small.png" /></a></li>
+								<!-- <button class="button-noborder" onclick="show_hide_introduction()" ><img src="images/dropdown_button_small.png" /> </button> -->
+							</ul>
+						</footer>
 
 					</div>
-					
+
+
+
+
 				</div>
-				
+
 			</section>
 			<!-- Second Section -->
 			<section id="skills" class="main special">
@@ -87,18 +118,22 @@
 				</header>
 				<ul class="statistics">
 					<li class="style5">
-						<span class="icon solid "><img src="images/logo_cpp.png" alt="" /></span>
-						<strong>3</strong> Projects
+						<!-- <span class="icon solid "><img src="images/logo_cpp.png" alt="" /></span> -->
+
+						<b>System</b> 
+						<ul>	Linux
+							Windows</ul>
+					
 					</li>
 					<li class="style4">
 						<span class="icon solid "><img src="images/logo_c.png" alt="" /></span>
 						<strong>5</strong> Projects
-				
+
 					<li class="style3">
 						<span class="icon solid "><img src="images/logo_cs.png" alt="" /></span>
 						<strong>4</strong> Projects
 					</li>
-					<li class="style2">
+					<!-- <li class="style2">
 						<span class="icon solid "><img src="images/logo_python.png" alt="" /></span>
 						<strong>2</strong> Projects
 					</li>
@@ -106,70 +141,75 @@
 					<li class="style1">
 						<span class="icon solid "><img src="images/logo_java.png" alt="" /></span>
 						<strong>4</strong> Projects
-					</li>
+					</li> -->
 				</ul>
 
 				<div class="content" id="projectDiv" hidden>
-					<div class="wrapper" >
+					<div class="wrapper">
 						<header class="major">
 							<h2>Projects</h2>
 						</header>
 						<div class="team">
 							<div class="team_member">
 								<div class="team_img">
-								  <img src="images/logo_cpp.png" alt="Team_image">
+									<img src="images/logo_cpp.png" alt="Team_image">
 								</div>
 								<h3>3D Objects detection</h3>
 								<p class="role">IMAGE PROCESSING <br> PCL/OpenCV/Tensorflow/Keras</p>
-								<p>Recognition, detection and segmentation of pedestrians and cars for self driving vehicles</p>
-								<a href="generic.html" class="button">Read more</a>  
+								<p>Recognition, detection and segmentation of pedestrians and cars for self driving
+									vehicles</p>
+								<a href="generic.html" class="button">Read more</a>
 							</div>
-						  <div class="team_member">
-							<div class="team_img">
-							  <img src="images/logo_cpp.png" alt="Team_image">
+							<div class="team_member">
+								<div class="team_img">
+									<img src="images/logo_cpp.png" alt="Team_image">
+								</div>
+								<h3>Suchiz Rendering Engine</h3>
+								<p class="role">COMPUTER GRAPHICS <br> Qt/OpenGL </p>
+								<p>Small 3D Engine. You have the possibility to custom your own scenes and animations.
+								</p>
+								<a href="https://github.com/suchiz/Suchiz-Rendring-Engine" class="button">Source
+									code</a>
 							</div>
-							<h3>Suchiz Rendering Engine</h3>
-							<p class="role">COMPUTER GRAPHICS <br> Qt/OpenGL </p>
-							<p>Small 3D Engine. You have the possibility to custom your own scenes and animations.</p>
-							<a href="https://github.com/suchiz/Suchiz-Rendring-Engine" class="button">Source code</a>   
-						</div>
-						<div class="team_member">
-							<div class="team_img">
-							  <img src="images/logo_cpp.png" alt="Team_image">
+							<div class="team_member">
+								<div class="team_img">
+									<img src="images/logo_cpp.png" alt="Team_image">
+								</div>
+								<h3>Krita (open source)</h3>
+								<p class="role">COMPUTER GRAPHICS <br> Qt </p>
+								<p>Small contribution to Krita (image editor open source). Modification of the
+									multibrush tool.</p>
+								<a href="https://github.com/suchiz/Krita/" class="button">Source code</a>
 							</div>
-							<h3>Krita (open source)</h3>
-							<p class="role">COMPUTER GRAPHICS <br> Qt </p>
-							<p>Small contribution to Krita (image editor open source). Modification of the multibrush tool.</p>
-							<a href="https://github.com/suchiz/Krita/" class="button">Source code</a>   
-						</div>
-						  <div class="team_member">
-							<div class="team_img">
-							  <img src="images/logo_cpp.png" alt="Team_image">
+							<div class="team_member">
+								<div class="team_img">
+									<img src="images/logo_cpp.png" alt="Team_image">
+								</div>
+								<h3>B-Spline Drawer</h3>
+								<p class="role">COMPUTER GRAPHICS <br> Qt/Matplotlib </p>
+								<p>Tool to create and visualize b-spline curves and tensorproduct surfaces. </p>
+								<a href="https://github.com/suchiz/SplineDrawer" class="button">Source code</a>
 							</div>
-							<h3>B-Spline Drawer</h3>
-							<p class="role">COMPUTER GRAPHICS <br> Qt/Matplotlib </p>
-							<p>Tool to create and visualize b-spline curves and tensorproduct surfaces. </p>
-							<a href="https://github.com/suchiz/SplineDrawer" class="button">Source code</a> 
-						</div>
-						<div class="team_member">
-							<div class="team_img">
-							  <img src="images/logo_c.png" alt="Team_image">
+							<div class="team_member">
+								<div class="team_img">
+									<img src="images/logo_c.png" alt="Team_image">
+								</div>
+								<h3>Hex game</h3>
+								<p class="role">GAME DEVELOPPER<br> SDL/Data structure </p>
+								<p>Academic project with UI and data stuctures backend </p>
+								<a href="https://github.com/suchiz/Hex/" class="button">Source code</a>
 							</div>
-							<h3>Hex game</h3>
-							<p class="role">GAME DEVELOPPER<br> SDL/Data structure </p>
-							<p>Academic project with UI and data stuctures backend </p>
-							<a href="https://github.com/suchiz/Hex/" class="button">Source code</a> 
-						</div>
 
 						</div>
-					  </div>	
-	
+					</div>
+
 				</div>
-				
+
 
 				<footer class="major">
 					<ul class="actions special">
-						<li><a onclick="show_hide_project()" class="button-noborder"><img id="imgProject" src="images/dropdown_button.png" /></a></li>
+						<li><a onclick="show_hide_project()" class="button-noborder"><img id="imgProject"
+									src="images/dropdown_button.png" /></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -193,7 +233,8 @@
 							Oriented Object Programming <br>
 							Data structure <br>
 							Software engineering (V Cycle, tests)<br></p>
-						<a onclick="show_hide_bscups()" class="button-noborder"><img id="imgBscups" src="images/dropdown_button_small.png" /></a>
+						<a onclick="show_hide_bscups()" class="button-noborder"><img id="imgBscups"
+								src="images/dropdown_button_small.png" /></a>
 
 					</li>
 
@@ -210,8 +251,9 @@
 							Advanced Java (JavaEE)<br>
 							Android programming (Java/Kotlin)<br>
 							Parallel programming (C++)<br></p>
-						<a onclick="show_hide_mscppke()" class="button-noborder"><img id="imgMscppke" src="images/dropdown_button_small.png" /></a>
-						
+						<a onclick="show_hide_mscppke()" class="button-noborder"><img id="imgMscppke"
+								src="images/dropdown_button_small.png" /></a>
+
 
 					</li>
 					<li>
@@ -219,7 +261,7 @@
 						<h3><strong>MSc 2 Image Analysis</strong>
 							<h4> <i>Paul Sabatier University</i></h4>
 						</h3>
-				
+
 						<p id="mscupsDiv" hidden>Real time rendering (C++)<br>
 							Image processing (MATLAB)<br>
 							Signal processing (MATLAB)<br>
@@ -228,9 +270,10 @@
 							Satellite image processing (Orfeo ToolBox)<br>
 							Computer vision (MATLAB)<br>
 							Agile and DevOps initiation (Jenkins, SonarQube)<br></p>
-						<a onclick="show_hide_mscups()" class="button-noborder"><img id="imgMscups" src="images/dropdown_button_small.png" /></a>
+						<a onclick="show_hide_mscups()" class="button-noborder"><img id="imgMscups"
+								src="images/dropdown_button_small.png" /></a>
 
-		
+
 					</li>
 				</ul>
 			</section>
@@ -283,7 +326,7 @@
 								class="label">GitHub</span></a></li>
 				</ul>
 			</section>
-			<p class="copyright">&bull; &copy; Julien Hongsavanh &bull; 
+			<p class="copyright"> &copy; Julien Hongsavanh &bull; Designed by <a href="https://html5up.net/">Html5Up</a>
 			</p>
 		</footer>
 

@@ -13,10 +13,14 @@ var imgMscups = document.getElementById('imgMscups');
 function show_hide_introduction(){
     if (introductionIsDisplayed == 1){
         document.getElementById("introductionDiv").style.display="inline";
+        document.getElementById("introImgToHide").style.display="none";
+        document.getElementById("introTextToHide").style.display="none";
         introductionIsDisplayed = 0;
         imgIntro.src = "images/dropdown_button_small_reverse.png"
     } else {
         document.getElementById("introductionDiv").style.display="none";
+        document.getElementById("introImgToHide").style.display="inline";
+        document.getElementById("introTextToHide").style.display="inline";
         introductionIsDisplayed = 1;
         imgIntro.src = "images/dropdown_button_small.png"
     }

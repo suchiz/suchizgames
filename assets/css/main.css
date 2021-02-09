@@ -1,6 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+
+:root{
+	--gradient-color: linear-gradient(to right bottom, rgba(220,176,221,.8),rgba(140,201,240,.8))
+}
 html, body, div, span, applet, object,
 iframe, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -26,6 +30,155 @@ footer, header, hgroup, menu, nav, section {
 	h1{
 		font-family: "Merriweather", Georgia, serif;
 	}
+
+
+	section.special .bodycard{
+		font-size: 1.6rem;
+		color: #333;
+		background-color: rgb(255, 255, 255);
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		justify-content: left;
+		padding: 0 1.5rem;
+		/* box-sizing: border-box; */
+	}
+
+	.card{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		background-color: #ffffff;
+		
+		box-shadow: 2px .8rem 1rem rgba(0,0,0,0.05);
+	}
+
+	.image-data-article{
+		text-align: left;
+		height: 25rem;
+		width: auto;
+		position: relative;
+		
+		z-index: 1;
+		
+	}
+
+	.background-image-article{
+		text-align: left;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url("../../images/safran_demo.jpg") center no-repeat;
+		background-size: cover;
+		z-index: -1;
+		transition: transform 0.5s;
+	}
+
+	.card:hover .background-image-article{
+		transform: scale(1.02);
+		
+	}
+
+
+	.publication-details i{
+		margin-right: 1rem;
+		text-align: left;
+	}
+
+	.author{
+		display: inline-block;
+		margin-bottom: 0.5rem;
+		transition: all 0.5s;
+		text-align: left;
+	}
+
+	.author:hover{
+		color: rgba(255, 255, 255, 0.75);
+	}
+
+	.date{
+		display: block;
+		text-align: left;
+	}
+
+	.post-data{
+		background-color: #fff;
+		padding: 2rem 3rem;
+		position: relative;
+		text-align: left;
+	}
+
+	.title {
+		font-size: 2rem;
+		line-height: 0;
+		text-align: left;
+	}
+
+	.subtitle{
+		text-align: left;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		color: #a2a2a2;
+		margin-bottom: 1rem 0 1.5rem 0;
+		font-weight: 400;
+	}
+
+	.description{
+		
+		position: relative;
+
+	}
+
+	.description::first-letter{
+		font-weight: bold;
+	}
+
+	.title::before{
+		content: '';
+		position: absolute;
+		top: 0.2;
+		left: 0;
+		width: 0.5rem;
+		height: 2.5rem;
+		background: var(--gradient-color);
+		border-radius: 2rem;
+	}
+
+	.cta{
+		text-align: left;
+		font-weight: bold;
+		margin-top: 1rem;
+
+	}
+
+	.cta a{
+		background: var(--gradient-color);
+		-webkit-background-clip: text;
+		color: transparent;
+		position: relative;
+
+	}
+	.cta::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom:0;
+		width: 100%;
+		height: 3px;
+		background: var(--gradient-color);
+		transform: scaleX(0);
+		transition: transform 5s;
+		
+	}
+
+	.cta a:hover::before{
+		transform: scaleX(1);
+	}
+
 	.wrapper{
 		margin-top: 10%;
 	  }
@@ -223,12 +376,12 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		border-bottom: dotted 0px;
 		color: inherit;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-image: 2px;
 		}
 
 	strong, b {
@@ -1899,13 +2052,14 @@ input, select, textarea {
     border: none;
     padding: none;
     background: none;
+	transition: transform 5s;
 }
-
 .button-noborder :hover {
     outline: 5;
     border: 5;
     padding: none;
     background: none;
+	transform: scale(1.2);
 }
 
 	input[type="submit"],
@@ -2443,7 +2597,20 @@ input, select, textarea {
 		}
 
 /* Image */
-
+.images2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+  }
+  
+  .images2 img {
+	transition: opacity 1s;
+  }
+  
+  .images2 img.opacity-toggle {
+	opacity: 0;
+  }
+  
 	.image {
 		border-radius: 8px;
 		border: 0;
@@ -2451,6 +2618,7 @@ input, select, textarea {
 		position: relative;
 	}
 
+	
 		.image img {
 			border-radius: 8px;
 			display: block;
@@ -2714,9 +2882,12 @@ input, select, textarea {
 
 /* Section/Article */
 
-	section.special, article.special {
+	section.special, article.special{
 		text-align: center;
+
 	}
+
+
 
 	header.major {
 		margin-bottom: 3em;
@@ -2987,8 +3158,8 @@ input, select, textarea {
 
 			.statistics li strong, .statistics li b {
 				display: block;
-				font-size: 2em;
-				line-height: 1.1;
+				font-size: 1.6em;
+				line-height: 1;
 				color: inherit !important;
 				font-weight: 300;
 				letter-spacing: -0.025em;

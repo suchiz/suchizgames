@@ -73,3 +73,32 @@ function show_hide_mscups(){
         imgMscups.src = "images/dropdown_button_small.png"
     }
 }
+
+
+var statsTool = 1;
+var toolsImg = document.getElementById('toolsImg');
+
+function show_hide_toolsMore(){
+    if (statsTool == 1){
+        toolsImg.src = "images/dropdown_stats_reverse.png"
+        document.getElementById("toolsMore").style.display="inline";
+        statsTool = 0;
+    } else {
+        document.getElementById("toolsMore").style.display="none";
+        statsTool = 1;
+        toolsImg.src = "images/dropdown_stats.png"
+    }
+}
+
+var images = document.querySelector('.image');
+
+images.addEventListener('mouseover', changeDefOver);
+images.addEventListener('mouseout', changeDefOut);
+
+function changeDefOver(e) {
+  e.target.classList.toggle('opacity-toggle');
+}
+
+function changeDefOut(e) {
+  e.target.classList.toggle('opacity-toggle');
+}

@@ -113,9 +113,12 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 	.title {
+		text-size-adjust: auto;
 		font-size: 2rem;
 		line-height: 0;
 		text-align: left;
+		width: 100%;
+		width: auto;
 	}
 
 	.subtitle{

@@ -111,6 +111,17 @@ footer, header, hgroup, menu, nav, section {
 		padding: 2rem 3rem;
 		position: relative;
 		text-align: left;
+		border-radius: 10px;
+	}
+	.post-data li{
+		padding-top: 0;
+		margin-top: 0;
+		margin-left: 5em;
+	}
+	.post-data li.second{
+		padding-top: 0;
+		margin-left: 7em;
+		margin-top: 0;
 	}
 
 	.title {

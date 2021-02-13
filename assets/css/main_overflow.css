@@ -187,6 +187,7 @@ input, select, textarea {
 		color: #007acc;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
+		cursor: pointer;
 		/* border-bottom: groove 3px rgba(53, 184, 143, 0.5); */
 		
 	}

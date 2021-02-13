@@ -125,6 +125,8 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 	.title {
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-weight: bold;
 		font-size: 2rem;
 		text-align: left;
 		width: 100%;
@@ -146,7 +148,10 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 	.description::first-letter{
-		font-weight: bold;
+		font-weight: lighter;
+		font-family: 'Brush Script MT';
+		font-size: 2em;
+		line-height: 0;
 	}
 
 	.title::before{
@@ -328,10 +333,10 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #5293b1 15%, #341c6d 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #5293b1 15%, #341c6d  85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #5293b1 15%, #341c6d  85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #5293b1 15%, #341c6d  85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #5293b1 15%, #0c1242 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #5293b1 15%, #0c1242  85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #5293b1 15%, #0c1242  85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #5293b1 15%, #0c1242  85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {

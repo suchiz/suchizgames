@@ -32,20 +32,24 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 
-	section.special .bodycard{
-		font-size: 1.6rem;
-		color: #333;
-		background-color: rgb(255, 255, 255);
-		width: 100%;
-		
-		display: flex;
-		flex-direction: column;
-		/* align-items: center; */
-		justify-content: left;
-		padding: 0 1.5rem;
-		/* box-sizing: border-box; */
+	.videowrapper{
+		align-items: center;
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 105px;
+		height: 0px;
 	}
 
+	.videowrapper iframe{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
 
 
 	.image-data-article{
@@ -114,14 +118,21 @@ footer, header, hgroup, menu, nav, section {
 		border-radius: 10px;
 	}
 	.post-data li{
-		padding-top: 0;
-		margin-top: 0;
+		
+		margin-top: 0rem;
 		margin-left: 5em;
+		list-style: none;
+		/* list-style-image: url("../../images/bullet1.png");
+		 */
+		 background: url("../../images/bullet1.png") no-repeat top left;
+		 padding: 0px 0px 15px 45px;
 	}
 	.post-data li.second{
 		padding-top: 0;
 		margin-left: 7em;
 		margin-top: 0;
+		background: url("../../images/bullet2.png") no-repeat top left;
+		padding: 0px 0px 15px 38px;
 	}
 
 	.title {
@@ -131,7 +142,9 @@ footer, header, hgroup, menu, nav, section {
 		text-align: left;
 		width: 100%;
 	}
-
+	.controlsContainer{
+		padding: none;
+	}
 	.subtitle{
 		text-align: left;
 		font-size: 1.2rem;
@@ -144,7 +157,7 @@ footer, header, hgroup, menu, nav, section {
 	.description{
 		
 		position: relative;
-
+		margin-bottom: 10px;
 	}
 
 	.description::first-letter{
@@ -2040,7 +2053,7 @@ input, select, textarea {
 
 /* Box */
 
-	.box {
+	/* .box {
 		border-radius: 8px;
 		border: solid;
 		margin-bottom: 2em;
@@ -2061,7 +2074,152 @@ input, select, textarea {
 
 	.box {
 		border-color: rgba(255, 255, 255, 0.35);
+	} */
+
+	.box {
+		position: relative;
+		margin-top: 0em;
+		margin-bottom: 0;
 	}
+/* 
+		.box:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -9em;
+			left: 50%;
+			height: 9em;
+			border-left: solid 1px #fff;
+		}
+
+		.box:before {
+			content: '';
+			display: block;
+			width: 90px;
+			height: 66px;
+			position: absolute;
+			left: 50%;
+			top: -4.5em;
+			margin-left: -45px;
+			margin-top: -33px;
+			background: url("images/arrow.svg") no-repeat;
+		} */
+
+		.box :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.style1 {
+			background: #fff;
+			padding: 3em;
+		}
+
+			.box.style1 .image {
+				display: block;
+				position: absolute;
+				top: 0;
+				width: 50%;
+				height: 100%;
+				background: #152E33;
+				overflow: hidden;
+			}
+
+				.box.style1 .image img {
+					position: absolute;
+					top: 0;
+					height: 100%;
+					width: auto;
+				}
+
+			.box.style1 .inner > :last-child {
+				margin: 0;
+			}
+
+			.box.style1.right .image {
+				left: 0;
+			}
+
+				.box.style1.right .image img {
+					right: 0;
+				}
+
+			.box.style1.right .inner {
+				margin-left: 50%;
+				padding-left: 3em;
+			}
+
+			.box.style1.left .image {
+				right: 0;
+			}
+
+				.box.style1.left .image img {
+					left: 0;
+				}
+
+			.box.style1.left .inner {
+				margin-right: 50%;
+				padding-right: 3em;
+			}
+
+		.box.style2 {
+			text-align: center;
+		}
+
+			.box.style2 header {
+				display: inline-block;
+				background: #fff;
+				padding: 0em 3em 2em 3em;
+				margin: 0;
+			}
+
+				.box.style2 header p {
+					padding: 0;
+				}
+
+			.box.style2 .inner {
+				position: relative;
+				padding: 40px 0 0px 0;
+			}
+
+				/* .box.style2 .inner:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					height: 100%;
+					border-left: solid 1px #fff;
+				} */
+
+				.box.style2 .inner .row {
+					position: relative;
+				}
+
+					.box.style2 .inner .row:before {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 20px;
+						width: calc(100% - 40px);
+						border-bottom: solid 1px #fff;
+					}
+
+				.box.style2 .inner .image {
+					position: relative;
+					z-index: 1;
+					padding: 20px;
+				}
+
+		.box.style3 {
+			background: #fff;
+			padding: 3em;
+		}
+
+			.box.style3 header {
+				text-align: center;
+			}
+
 
 /* Button */
 
@@ -2671,6 +2829,12 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				transition: transform 1s;;
+			}
+
+			.image.fit img:hover {
+				width: 100%;
+				transform: scale(1.1);
 			}
 
 		.image.main {

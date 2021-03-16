@@ -124,14 +124,3 @@ audioList.forEach(function(audioSingle, index){
     })
 })
 
-function show_hide_hidden(component){
-    if (mscUpsIsDisplayed == 1){
-        imgMscups.src = "images/dropdown_button_small_reverse.png"
-        document.getElementById("mscupsDiv").style.display="inline";
-        mscUpsIsDisplayed = 0;
-    } else {
-        document.getElementById("mscupsDiv").style.display="none";
-        mscUpsIsDisplayed = 1;
-        imgMscups.src = "images/dropdown_button_small.png"
-    }
-}

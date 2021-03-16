@@ -89,34 +89,37 @@ audioList.forEach(function(audioSingle, index){
 
         var duration = document.getElementById("duration");
         setTimeout(function(){
-            var s = parseInt(audio.duration % 60);
-            var m = parseInt((audio.duration / 60) %60);
-            if (s < 10)
-                duration.innerHTML = "0" +m +":" +"0"+s;
-            else
-                duration.innerHTML = "0" +m +":" +s;
-            
-            audio.addEventListener("timeupdate", function(){
-                var durationUpdate = document.getElementById("durationUpdate");
-                var s = parseInt(audio.currentTime % 60);
-                var m = parseInt((audio.currentTime / 60) %60);
-                if (s < 10)
-                    durationUpdate.innerHTML = "0" +m +":" +"0"+s;
+            if (audio != null){
+                var s1 = parseInt(audio.duration % 60);
+                var m1 = parseInt((audio.duration / 60) %60);
+                if (s1 < 10)
+                    duration.innerHTML = "0" +m1 +":" +"0"+s1;
                 else
-                    durationUpdate.innerHTML = "0" +m +":" +s;
+                    duration.innerHTML = "0" +m1 +":" +s1;
                 
-                if(duration.textContent == durationUpdate.textContent){
-                    audioPlayPause.innerHTML = "<i class = 'fa fa-play'></i>";
-                    thisisAudioSingle.setAttribute("data-active", "pause");
-                    count = 0;
-                }    
-
-                slider.value = (audio.currentTime/audio.duration) * 100; 
-                slider.oninput = function(){
-                    audio.currentTime = (this.value/100) * audio.duration;
-                }
-                
-            }, false)
+                audio.addEventListener("timeupdate", function(){
+                    var durationUpdate = document.getElementById("durationUpdate");
+                    var s = parseInt(audio.currentTime % 60);
+                    var m = parseInt((audio.currentTime / 60) %60);
+                    if (s < 10)
+                        durationUpdate.innerHTML = "0" +m +":" +"0"+s;
+                    else
+                        durationUpdate.innerHTML = "0" +m +":" +s;
+                    
+                    if(duration.textContent == durationUpdate.textContent){
+                        audioPlayPause.innerHTML = "<i class = 'fa fa-play'></i>";
+                        thisisAudioSingle.setAttribute("data-active", "pause");
+                        count = 0;
+                    }    
+    
+                    slider.value = (audio.currentTime/audio.duration) * 100; 
+                    slider.oninput = function(){
+                        audio.currentTime = (this.value/100) * audio.duration;
+                    }
+                    
+                }, false)
+            }
+          
         }, 200)
     })
 })

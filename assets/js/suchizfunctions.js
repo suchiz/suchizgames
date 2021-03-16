@@ -103,7 +103,6 @@ function changeDefOut(e) {
   e.target.classList.toggle('opacity-toggle');
 }
 
-
 document.getElementById("contact-form").addEventListener("submit", submitForm);
 
 function submitForm() {

@@ -486,13 +486,8 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<!-- <section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section> -->
+
+
 			<section>
 				<h2>Informations</h2>
 				<dl class="alt">
@@ -513,6 +508,30 @@
 								class="label">GitHub</span></a></li>
 				</ul>
 			</section>
+
+			<section>
+				<header>
+					<h2>Contact</h2>
+					<p>I will get back to you as soon as possible</p>
+				</header>
+				<form method="POST" id="contact-form">
+					<div class="row gtr-50">
+						<div class="col-6 col-12-mobile"><input id="form-name" type="text" class="text" name="name" placeholder="Name" required/></div>
+						<div class="col-6 col-12-mobile"><input id="form-email" type="email" class="text" name="email" placeholder="Email" required/></div>
+						<div class="col-12">
+							<textarea id="form-message" name="message" placeholder="Message" required></textarea>
+						</div>
+						<div class="col-12">
+							<ul class="actions">
+								<li><input type="button" value="Send Message" onclick="submitForm()" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+						</section>
+
+
+
 			<p class="copyright"> &copy; Julien Hongsavanh &bull; Designed by <a href="https://html5up.net/">Html5Up</a>
 			</p>
 		</footer>
@@ -520,6 +539,7 @@
 	</div>
 
 	<!-- Scripts -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script src="assets/js/suchizfunctions.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>

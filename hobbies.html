@@ -82,70 +82,191 @@
 								<!-- Features -->
 									<section class="box features">
 										<h2 class="major"><span>Music</span></h2>
-										<div>
-											<div class="row">
-												<div class="col-3 col-6-medium col-12-small">
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-															<h3><a href="#">A Subheading</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-															<h3><a href="#">Another Subheading</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-															<h3><a href="#">And Another</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-															<h3><a href="#">And One More</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
-
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><a href="#" class="button large">Do Something</a></li>
-														<li><a href="#" class="button alt large">Think About It</a></li>
-													</ul>
+										
+										<div class="audio_player">
+											<audio id="audio">
+												<source src="" id="audioSource" type="audio/mpeg">	
+											</audio>
+											
+											<div class="player">
+												<span class="audio-title" id="audioTitle">   </span>
+												<div class="player-middle-row">
+													
+													<div class="player-middle-left">
+														<span  id="audioPlayPause"><i class='fa fa-play'></i></span>
+														<span  id="audioStop"><i class='fa fa-stop'></i></span>
+													</div>
+													<input type="range" min="0" max="100" value="0" id="slider">
+													<div class="player-middle-right">
+														<span id="duration">00:00</span>
+														<span id="durationUpdate">00:00</span>
+													</div>
 												</div>
 											</div>
-										</div>
-									</section>
 
+											<div class="audioPlaylistWrap">
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Piochiz - Echloed v2 (Echlo 2012).mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Piochiz - Echloed v2 (Echlo 2012)</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Piochiz - Echloed.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Piochiz - Echloed</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Piochiz - Harplegique.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Piochiz - Harplegique</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Piochiz - Piochiz.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Piochiz - Piochiz</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Don't go away.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Don't go away</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Dont look back in anger.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Dont look back in anger</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Hallelujah v3.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Hallelujah v3</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Lemon tree.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Lemon tree</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Old town road.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Old town road</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Pieces.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Pieces</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Safe & Sound.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Safe & Sound</div>
+												</div>
+
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Titanium.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Titanium</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Viva la vida.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Viva la vida</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - Wonderwall.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - Wonderwall</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Sucheliz - You know Im no good.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Sucheliz - You know Im no good</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Canoned (Echlo 2013).mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Canoned (Echlo 2013)</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Dreaming.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Dreaming</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Feli impro.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Feli impro</div>
+												</div>
+												
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - I wanna rock right now.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - I wanna rock right now</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - ImNotAFuckingKid (Echlo 2014).mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - ImNotAFuckingKid (Echlo 2014)</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Laurelied.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Laurelied</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Maggle.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Maggle</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Pampam (Echlo 2016).mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Pampam (Echlo 2016)</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Time goes so fast (Echlo 2015).mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Time goes so fast (Echlo 2015)</div>
+												</div>
+												<div class="audio-list">
+													<a class="aTrigger" data-active="" data-audio="musics/Suchiz - Waiting for you.mp3">
+														<i class='fa fa-play'></i>
+													</a>
+													<div class="audio-list-in">Suchiz - Waiting for you</div>
+												</div>
+												
+												
+
+											</div>
+										</div>
+
+
+
+									</section>
 							</div>
 
 							<div class="col-12" id="hackathons">
@@ -238,6 +359,7 @@
 
 								<!-- Features -->
 									<section class="box features">
+
 										<h2 class="major"><span>Travels</span></h2>
 										<div>
 											<div class="row">
@@ -381,7 +503,8 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/musicplayer.js"></script>
+			<script src="assets/js_/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
